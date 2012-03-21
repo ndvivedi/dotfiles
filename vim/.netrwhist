@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/ndvivedi/.chef'
+let g:netrw_dirhist_2='/etc/collectd'
+let g:netrw_dirhist_3='/etc'
+let g:netrw_dirhist_4='/home/ndvivedi/src/chef-repo/cookbooks'
+let g:netrw_dirhist_5='/home/ndvivedi/src/chef-repo/cookbooks/collectd_plugins'
+let g:netrw_dirhist_6='/home/ndvivedi/src/chef-repo/cookbooks/collectd_plugins/recipes'
