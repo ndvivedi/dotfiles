@@ -63,7 +63,8 @@ filetype plugin indent on
 
 nmap <leader>l :set list!<CR>
 " toggle ' and "
-map <leader>w :w !sudo tee %
+map <leader>w :w !sudo tee %<CR>
+map <leader>n :set number!<CR>
 
 autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 et
 
