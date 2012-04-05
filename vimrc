@@ -70,3 +70,6 @@ autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 
 
 
 call pathogen#infect()
+
+set background=dark
+colorscheme solarized
