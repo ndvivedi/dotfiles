@@ -73,11 +73,11 @@ XTerm*color9:                S_orange
 
 !! green dark/light
 XTerm*color2:                S_green
-XTerm*color10:               S_base01
+XTerm*color10:               S_base1
 
 !! yellow dark/light
 XTerm*color3:                S_yellow
-XTerm*color11:               S_base00
+XTerm*color11:               S_base0
 
 !! blue dark/light
 XTerm*color4:                S_blue
