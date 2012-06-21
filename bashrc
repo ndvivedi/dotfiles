@@ -49,6 +49,7 @@ fi
 test -d "$HOME/.bin" && PATH="$HOME/.bin:$PATH"
 test -e "$HOME/.bin/z.sh" && . $HOME/.bin/z.sh
 test -e $HOME/.bashrc.local && . $HOME/.bashrc.local
+test -e $HOME/.profile && . $HOME/.profile
 
 export EDITOR=vim
 
