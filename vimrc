@@ -65,12 +65,23 @@ nmap <leader>l :set list!<CR>
 " toggle ' and "
 map <leader>w :w !sudo tee %<CR>
 map <leader>n :set number!<CR>
+map <leader>p :set paste!<CR>
+map <leader>a :NERDTreeToggle<CR>
 
 autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 et
+autocmd FileType java,xml let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 
-let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
+let g:SuperTabDefaultCompletionType = "<c-x><c-p>"
 
 call pathogen#infect()
 
 set background=dark
 colorscheme solarized
+
+autocmd vimenter * if !argc() | NERDTree | endif
+
+augroup CommandTExtension
+  autocmd!
+  autocmd FocusGained * CommandTFlush
+  autocmd BufWritePost * CommandTFlush
+augroup END
