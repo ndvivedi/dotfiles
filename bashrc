@@ -1,4 +1,3 @@
-#ripped off from many .bashrcs across the web
 
 [ -z "$PS1" ] && return
 
@@ -19,8 +18,6 @@ shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 
-[ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r $HOME/.dircolors && eval "$(dircolors -b $HOME/.dircolors)" || eval "$(dircolors -b)"
@@ -39,7 +36,6 @@ alias la='ls -A'
 alias l='ls -CF'
 alias du1='du -h --max-depth=1'
 alias fn='find . -name'
-alias hi='history | tail -20'
 
 test -e $HOME/.bash_aliases && . $HOME/.bash_aliases
 

@@ -69,6 +69,7 @@ map <leader>p :set paste!<CR>
 map <leader>a :NERDTreeToggle<CR>
 
 autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 et
+autocmd FileType python set ai sw=4 sts=4 et
 autocmd FileType java,xml let g:SuperTabDefaultCompletionType = "<c-x><c-u>"
 
 let g:SuperTabDefaultCompletionType = "<c-x><c-p>"
@@ -80,8 +81,8 @@ colorscheme solarized
 
 autocmd vimenter * if !argc() | NERDTree | endif
 
-augroup CommandTExtension
-  autocmd!
-  autocmd FocusGained * CommandTFlush
-  autocmd BufWritePost * CommandTFlush
-augroup END
+"augroup CommandTExtension
+"autocmd!
+"autocmd FocusGained * CommandTFlush
+"autocmd BufWritePost * CommandTFlush
+"augroup END

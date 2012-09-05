@@ -45,6 +45,7 @@ myWorkspaces = map show [1..9]
 --
 myManageHook = composeAll
     [ className =? "Unity-2d-panel" --> doIgnore
+--	, isFullscreen -?> doFullFloat
     , className =? "Do"     --> doFloat]
 
 
@@ -90,7 +91,7 @@ myBorderWidth = 1
 -- ("right alt"), which does not conflict with emacs keybindings. The
 -- "windows key" is usually mod4Mask.
 --
-myModMask = mod1Mask
+myModMask = mod4Mask
  
 myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   ----------------------------------------------------------------------
